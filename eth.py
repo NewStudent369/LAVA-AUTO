@@ -9,12 +9,6 @@ outfileName=r'D:\PycharmProjects\SmartContractTX\waletId\walletPrice'
 outfileId=r'D:\PycharmProjects\SmartContractTX\waletId\walletIdLava'
 outfileName1='walletPriceEmpty'
 
-rpcNear='https://near.lava.build/lava-referer-4868f752-abbc-4f16-8c7e-fabad2cc33f2/'
-keyRpc='ed25519:22xfUALsy5G1N3N2qmCVBUoKZKaaQA6nzS8HHCnQEEEm5YN2kTZhJZb1yg3hN5Sdi2qdSbmmRVFwj9RDrQafuLJ3'
-
-
-
-
 def isGoodWallet(walletId):
     strWallet=str(walletId)
     if strWallet.find('88888888') >= 0 or strWallet.find('11111111') >= 0 or strWallet.find('22222222') >= 0 or strWallet.find('33333333') >= 0 or \

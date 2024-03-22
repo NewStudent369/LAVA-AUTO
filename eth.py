@@ -1,13 +1,16 @@
-﻿import ecdsa
+﻿import os
+
+import ecdsa
 import time
 from ecdsa import SECP256k1
 from hdwallet import HDWallet
 from hdwallet.symbols import ETH as SYMBOL
 from web3 import Web3,HTTPProvider
 import random
-outfileName=r'D:\PycharmProjects\SmartContractTX\waletId\walletPrice'
-outfileId=r'D:\PycharmProjects\SmartContractTX\waletId\walletIdLava'
-outfileName1='walletPriceEmpty'
+pth=os.getcwd()
+wltPth=os.path.join(pth,'wallet')
+outfileId=os.path.join(wltPth,'walletId')
+outfileName=os.path.join(wltPth,'walletPrice')
 
 def isGoodWallet(walletId):
     strWallet=str(walletId)

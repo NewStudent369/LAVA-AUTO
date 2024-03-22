@@ -32,18 +32,22 @@ block={
   }
 }
 
+
+
+
+
+
 while True:
     try:
         a=requests.post(url=urlMain,json=account)
-        t1=random.randint(10,30)
-        time.sleep(t1)
+        t2=random.randint(10,30)
         b=requests.post(url=urlMain,json=gas)
         t2=random.randint(10,30)
         time.sleep(t2)
-        print("休息%d秒"%(t1+t2,))
+        print("休息%d秒"%(t2,))
     except:
-        print('链接错误,休息2分钟')
-        time.sleep(300)
+        time.sleep(180)
+        print("休息180秒")
     #c=requests.post(url=urlMain,json=block)
 
 

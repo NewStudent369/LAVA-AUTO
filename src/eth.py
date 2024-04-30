@@ -8,7 +8,7 @@ from hdwallet.symbols import ETH as SYMBOL
 from web3 import Web3,HTTPProvider
 import random
 pth=os.getcwd()
-wltPth=os.path.join(pth,'wallet')
+wltPth=os.path.join(pth, '../wallet')
 outfileId=os.path.join(wltPth,'walletId')
 outfileName=os.path.join(wltPth,'walletPrice')
 
